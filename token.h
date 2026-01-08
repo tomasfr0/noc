@@ -43,26 +43,9 @@ struct s_token {
 };
 
 
-
-/*
- *
- *
- *    source -> tokenizer -> lexer 
- *                  |
- *                  |-> ... 
- *
- *
- *
- *
- *
- *
- *
- *
- *
- * */
-
 int is_whitespace(int ch);
 int getNchar(char **buf,int *len);
 char* slice(char *buff, int len, int start, int end);
 void parse(char *source, int len, struct s_token **tokens);
 struct s_token *make_token(char buff[], int line, int start, int end, int t);
+
